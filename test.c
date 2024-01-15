@@ -12,11 +12,14 @@ int main()
     {
         printf("Non-positive\n");
     }
-
-    for (int i = 0; i < 5; ++i)
+    int s = 0;
+    for (int i = 0; i < 5555555000; ++i)  
     {
+        s = s + i;
         printf("Iteration %d\n", i);
     }
+
+    
 
     return 0;
 }

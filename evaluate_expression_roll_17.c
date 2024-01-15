@@ -62,7 +62,7 @@ int evaluate_expression(const char *expression)
     {
         if (isdigit(expression[i]))
         {
-            char *end;
+            char *end;  
             int value = strtol(&expression[i], &end, 10);
             values_stack[++values_top] = value;
             i = end - expression;
